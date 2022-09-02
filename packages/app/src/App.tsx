@@ -26,6 +26,7 @@ import { apis } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
 import { Root } from './components/Root';
+import { HelloWorld } from './components/HelloWorld';
 
 import { AlertDisplay, OAuthRequestDialog } from '@backstage/core-components';
 import { createApp } from '@backstage/app-defaults';
@@ -96,6 +97,7 @@ const routes = (
 
 const App = () => (
   <AppProvider>
+    <HelloWorld />
     <AlertDisplay />
     <OAuthRequestDialog />
     <AppRouter>
