@@ -1,4 +1,4 @@
-name: Test
+name: Pull Request & Master Workflow
 
 on:
   push:
@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    name: test
 
     runs-on: ubuntu-latest
 
